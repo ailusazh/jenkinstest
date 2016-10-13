@@ -1,3 +1,3 @@
-FROM nginx
-ADD glance_api.py /opt/
+FROM redis
+ADD . /opt/
 EXPOSE 80
