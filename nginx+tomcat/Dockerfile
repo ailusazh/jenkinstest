@@ -1,4 +1,4 @@
-FROM jd_new_base_img_6.5_v852_nginx:base
+FROM basenginxtomcat
 
 ADD ./CIJD.war /home/
 
