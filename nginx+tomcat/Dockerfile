@@ -1,4 +1,4 @@
-FROM basenginxtomcat
+FROM base_nginx_tomcat
 
 ADD ./CIJD.war /home/
 
