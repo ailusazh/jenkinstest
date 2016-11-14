@@ -1,0 +1,5 @@
+FROM jd_tomcat_nginx_base_img_v4 
+
+ADD ./CIJD.war /home/
+
+ENTRYPOINT ./home/admin/start_container.sh DOMAINNAME SERVERNUM && /etc/init.d/crond restart && /etc/init.d/sshd restart && sleep 9999999d 
