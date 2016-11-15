@@ -1,4 +1,4 @@
-FROM jd_tomcat_nginx_base_img_v4 
+FROM jd_tomcat_nginx_base_img_v5
 
 ADD ./CIJD.war /home/
 
