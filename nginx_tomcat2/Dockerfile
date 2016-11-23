@@ -1,6 +1,6 @@
 FROM 10.8.65.133:5050/jd_tomcat_nginx_base_img_v5
 
-RUN wget http://10.8.65.133:9999/aa -O /home/aa
+RUN echo COUNTNUM > /home/aa
 
 RUN wget LINK -O /home/CIJD.war
 
