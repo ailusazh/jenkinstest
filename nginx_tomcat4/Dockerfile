@@ -1,6 +1,4 @@
-FROM 10.8.65.133:5050/jd_tomcat_nginx_base_img_v5
-
-RUN wget http://10.8.65.133:9999/cc -O /home/cc
+FROM 10.8.65.133:5050/jd_new_base_img_6.5_jdk1.8_novolume
 
 RUN wget LINK -O /home/CIJD.war
 
