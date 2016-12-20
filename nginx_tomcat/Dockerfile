@@ -1,4 +1,4 @@
-FROM IMAGENAME
+FROM 10.8.65.156/baseimage_webtomcat/java1.6:jdk1.6_tomcat6
 
 ADD ./*.war /home/CIJD.war
 
