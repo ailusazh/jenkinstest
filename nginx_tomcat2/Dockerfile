@@ -1,5 +1,5 @@
-FROM 10.8.65.133:5050/jd_new_base_img_6.5_jdk1.6
+FROM harbor.default.svc.n.jd.local/baseimage_web_tomcat/java-jd-centos6-jdk17-ngx197
 
-RUN wget LINK -O /home/CIJD.war
+RUN wget LINK -O /home/CIJD.war && unzip -d /home/export/App/DOMAINNAME/ /home/CIJD.war
 
-ENTRYPOINT ./home/admin/start_container.sh DOMAINNAME SERVERNUM && /etc/init.d/crond restart && /etc/init.d/sshd restart && sleep 9999999d 
+ENTRYPOINT ./home/admin/start_container.sh DOMAINNAME SERVERNUM APPNAME && /etc/init.d/crond restart && /etc/init.d/sshd restart && sleep 9999999d 
