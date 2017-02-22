@@ -1,4 +1,4 @@
-FROM harbor.default.svc.n.jd.local/baseimage_web_tomcat/java-jd-centos6-jdk17-ngx197
+FROM harbor.default.svc.n.jd.local/baseimage_web_tomcat/java-jd-centos6-jdk16-ngx197
 
 RUN wget LINK -O /home/CIJD.war && unzip -d /home/export/App/DOMAINNAME/ /home/CIJD.war
 
