@@ -1,7 +1,5 @@
 FROM IMAGENAME 
 
-RUN wget -q http://ngx2agenxt-agent.harbor.svc.n.jd.local/image-install.sh -O /root/image-install.sh && chmod +x /root/image-install.sh && ./root/image-install.sh && rm -rf /root/image-install.sh
-
 ADD ./*.war /home/admin
 
 RUN mkdir -p /home/export/App/DOMAINNAME && mv /home/admin/*.war /home/export/App/DOMAINNAME && cd /home/export/App/DOMAINNAME && /home/export/servers/jdk1.6.0_25/bin/jar -xvf *.war
